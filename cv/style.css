@@ -29,8 +29,9 @@ header{
     align-items: flex-end;
 }
 header p{
-    color: rgb(187, 186, 147);
+    color: rgb(194, 193, 157);
     font-size: 12px;
+    
 }
 .container .left_side{
            position: relative;

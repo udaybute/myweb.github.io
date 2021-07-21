@@ -24,9 +24,17 @@ body{
    
 }
 
+header{
+    padding-top: 7px;
+    align-items: flex-end;
+}
+header p{
+    color: rgb(187, 186, 147);
+    font-size: 12px;
+}
 .container .left_side{
            position: relative;
-           background: #003147;
+           background: #052a3c;
            padding: 40px;
 }
 .container .right_side{
@@ -44,6 +52,7 @@ body{
     border-bottom: 1px solid rgba(255,255,255,0.2);
 }
 .profileText .imgbx{
+   margin-top: 10px;
     position: relative;
     width: 200px;
     height: 200px;

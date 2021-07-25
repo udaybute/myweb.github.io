@@ -38,11 +38,60 @@ header p{
            background: rgb(53, 54, 54);
            padding: 40px;
 }
+
+.container .left_side .text{
+   
+    animation: animate1 0.8s linear reverse ;
+} 
+
+@keyframes animate1 {
+    0%{
+        left: -10%;
+        transform:translateX(10%);
+   
+    };
+    100%{
+   transform: translateX(100%);
+    };
+}
 .container .right_side{
     position: relative;
     background: #052a3c;
     padding: 40px;
     
+}
+.container .right_side .text{
+   
+    animation: animate2 0.8s linear ;
+    
+}
+@keyframes animate2 {
+    0%{
+        transform:translateX(20%);
+   
+    };
+    100%{
+    
+    };
+}
+
+.container .right_side .text h1{
+  
+    padding-bottom: 2%;
+    color: #d32727;
+
+    }
+
+    .container .right_side .text .line div{
+    height: 100%;
+    background: #03a9f4;
+    
+          }
+
+.container .right_side .text h3{
+    padding-bottom: 8%;
+    color: #3ba9b8;
+
 }
 .profileText{
     position: relative;
@@ -230,6 +279,10 @@ p{
 .project ul li{
     padding: 10px;
     color:  rgb(243, 237, 237);
+}
+.project h3{
+    color: red;
+    
 }
 
 .project ul li span a{

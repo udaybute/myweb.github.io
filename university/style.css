@@ -16,7 +16,7 @@
   }
  
   section{
-       background: rgb(191, 206, 206);
+    background: rgb(73, 124, 131);
   }
 
   .card:hover{
@@ -33,3 +33,49 @@
     10px 10px 10px 15px rgba(0, 0, 0, 0.404),
    20px 20px 20px 20px rgba(0, 0, 0, 0.404);
   }
+
+   h2{
+     color: red;
+     background: rgb(41, 44, 44);
+     border-end-end-radius: 20px;
+     border-top-left-radius: 20px;
+   
+    
+   }
+   h3{
+      
+     color: rgb(250, 7, 7);
+     border-radius: 5%;
+     border-end-end-radius: 20px;
+     border-top-left-radius: 20px;
+     background: rgb(44, 44, 44);
+  box-shadow: 8px 8px 8px 8px rgba(20, 18, 18, 0.404),
+    10px 10px 10px 15px rgba(39, 30, 30, 0.404);
+  
+     
+   }
+   p{
+     color: seashell;
+   }
+   label{
+     color: seashell;
+   }
+
+   .py-3{
+   
+    background-color: darkslategrey;
+   border-bottom-right-radius: 20PX;
+   border-bottom-LEFT-radius: 20PX;
+   transition: 1S;
+   padding: 10PX;
+  }
+ 
+  .py-3:hover{
+    box-shadow: 8px 8px 8px 8px rgba(20, 18, 18, 0.404),
+    10px 10px 10px 15px rgba(39, 30, 30, 0.404),
+   20px 20px 20px 20px rgba(37, 28, 28, 0.404);
+     
+   }
+   
+  }
+ 

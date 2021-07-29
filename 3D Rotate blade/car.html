@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+
+  body{
+      margin: 0;
+      padding:0;
+      background: rgb(40, 49, 88);
+  }
+ .box{
+   
+  
+    position: absolute;
+    width: 150px;
+    height: 250px;
+    /* background: #fff; */
+    transform: perspective(1000px) rotateY(210deg);
+    transform-style: preserve-3d;
+    top: calc(50% - 150px);
+    left: calc(50% - 100px);
+    
+}
+
+
+.box div{
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    animation: animate 10s linear infinite;
+   
+ 
+}
+.box div span{
+     position: absolute;
+     top: 0;
+     left: 0;
+     display: block;
+     width: 100%;
+     height: 100%;
+     background-image: linear-gradient(179deg, rgb(230, 214, 214), rgb(19, 14, 14),  rgb(230, 214, 214));
+ 
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 40px;
+
+    animation: animate1 15s linear infinite;
+}
+
+@keyframes animate1 {
+   
+  
+    0%{ 
+    }
+    60%{
+       
+       /* height: 20%;
+        width: 100%; */
+     
+    }
+    100%{
+        height: 50%;
+       width: 100%;
+     
+   
+       
+       }
+    
+}
+
+@keyframes animate {
+    0%{
+        /* transform: perspective(1000px) rotatez(40deg)
+        ; */
+       
+
+       
+    
+    }
+50%{
+   
+    
+}
+
+    100%{
+        transform: perspective(1000px) rotatex(540deg)
+        ;
+        height: 20%;
+
+    }
+}
+
+
+
+
+.box div span:nth-child(1){
+    transform: rotateX(0deg);
+}
+.box div span:nth-child(2){
+    transform: rotateX(45deg);
+}
+.box div span:nth-child(3){
+    transform: rotateX(-45deg);
+}
+.box div span:nth-child(4){
+    transform: rotateX(90deg);
+}
+
+.box::before{
+    content:'' ;
+    position: absolute;
+    bottom: -130px;
+    left: 0;
+  width: 180px;
+  height: 130px;
+
+    background: #000;
+    filter: blur(40px);
+    opacity: 0.3;
+    transform: rotatex(90deg);
+}
+
+.blade{
+     margin-left: 30%;
+       background-position: center;
+       width: 300px;
+       
+}
+.blade h1{
+    background-image: linear-gradient(to right , rgb(41, 36, 36), rgb(40, 49, 88));
+    color: cornflowerblue;
+}
+.blade p{
+    color: darkorange;
+ 
+}
+
+
+</style>
+<body>
+    <div class="blade">
+        <h1>3D Rotate blade</h1>
+        <p>by uday</p>
+    </div>
+ <div class="box">
+   
+    <div> 
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+     
+    </div>
+ </div>
+
+</body>
+</html>

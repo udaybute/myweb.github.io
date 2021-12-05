@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .container {
+        display: flex;
+        justify-content: center;
+        background: linear-gradient(to right, #2C5364, #203A43, #0F2027);
+     text-align: center;
+        height: 100vh;
+
+    }
+
+    .grid {
+        margin-top: 100px;
+        border: 2px solid black;
+        width: fit-content;
+        height: 200px;
+        background: rgb(255, 241, 241);
+        display: grid;
+        grid-column-gap: 10px;
+        grid-row-gap: 10px;
+        grid-template-columns: repeat(3, 100px) 100px;
+        padding: 20px;
+        text-align: center;
+        transition: 2S;
+    }
+
+    .grid:hover {
+        background: rgb(77, 141, 141);
+     
+    }
+
+    .item {
+        background: rgb(11, 42, 113);
+        border-radius: 10px;
+        transition: 1.5s;
+    }
+
+    .item:hover {
+        background: rgb(230, 222, 222);
+        box-shadow: 0px 10px 18px black, 0px 5px 60px black, 3px 3px 2px black;
+    }
+
+    #item1 {
+        grid-row: 1/ span 2;
+        grid-column: 1/span 1;
+
+    }
+
+   
+</style>
+
+<body>
+    <div class="container">
+        <h2>Uday</h2>
+        <div class="grid">
+            <div class="item" id="item1">
+                <h1>A</h1>
+            </div>
+            <div class="item">
+                <h1>B</h1>
+            </div>
+            <div class="item">
+                <h1>C</h1>
+            </div>
+            <div class="item">
+                <h1>D</h1>
+            </div>
+            <div class="item">
+                <h1>E</h1>
+            </div>
+            <div class="item">
+                <h1>F</h1>
+            </div>
+            <div class="item">
+                <h1>G</h1>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>

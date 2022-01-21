@@ -280,13 +280,19 @@ p{
     padding: 10px;
     color:  rgb(243, 237, 237);
 }
+#cvp{
+    margin-top: 0px;
+}
 .project h3{
     color: red;
     
 }
-
+.project h4{
+    color: #03a9f4;
+    margin-top: 20px;
+}
 .project ul li span a{
-    padding: 10px;
+    /* padding: 10px; */
     color:  rgb(108, 157, 197);
 }
 
